@@ -42,7 +42,7 @@ Esto generará los archivos `.uf2` ejecutables dentro de las subcarpetas corresp
 4. La placa se reiniciará automáticamente y comenzará a ejecutar el kernel de FreeRTOS.
 
 ### 3. Ejecución de la Interfaz Serial
-Para interactuar con el menú de comandos en los experimentos 3 y 4, abre la terminal serial con permisos de superusuario configurando los baudios a 115200:
+Para interactuar con el menú de comandos, abre la terminal serial con permisos de superusuario configurando los baudios a 115200:
 
 ```bash
 sudo gtkterm -p /dev/ttyACM0 -s 115200
