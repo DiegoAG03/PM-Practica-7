@@ -1,0 +1,13 @@
+# Ignore full FreeRTOS kernel
+FreeRTOS/
+
+# Ignore compilation directories
+build/
+rp2040/build/
+
+# Ignore binary files
+*.uf2
+*.elf
+*.bin
+*.o
+*.a

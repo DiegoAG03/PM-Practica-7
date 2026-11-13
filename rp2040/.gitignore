@@ -1,0 +1,31 @@
+# Ignore everything
+*
+# but these files
+!.gitignore
+!.gitattribute
+!readme.MD
+!LICENSE
+!CMakeLists.txt
+# and these filetypes
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+!*.cmake
+!*.pio
+# and these subdirectories
+!*/
+
+# Skip examples and build
+blink/
+calc-pi/
+hello-world/
+hello-world-dual/
+i2cScan/
+neopixel/
+tempC/
+usblink/
+build/
+
+# Skip readme.MD
+readme.MD
