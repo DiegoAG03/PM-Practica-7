@@ -10,10 +10,9 @@ Repositorio creado para la Práctica 7 de Procesadores Multinúcleo, el cual con
 
 El repositorio está dividido en cuatro experimentos incrementales:
 
-*   **`c1-temp/`**: Tarea dedicada a la configuración del canal 4 del ADC para la lectura continua del sensor de temperatura interno del RP2040, tanto en grados Celsius como Fahrenheit.
-*   **`c2-led/`**: Tarea dedicada al control de la intensidad luminosa del LED integrado utilizando modulación por ancho de pulsos (PWM).
-*   **`c3-usb_temp_led/`**: Integración de las tareas anteriores sumando una interfaz de comandos por puerto serial (USB). Permite solicitar la lectura de temperatura (comando `t`) o ajustar el nivel de PWM del LED (comando `l`) mediante el uso de variables globales protegidas por exclusión mutua (`mutex_enter_blocking`).
-*   **`c4-marquee/`**: Implementación de una cuarta tarea que controla una marquesina de 8 LEDs externos. Introduce una máquina de estados controlada por el comando `m`, permitiendo cambiar la dirección de la secuencia (`l`: izquierda, `r`: derecha, `p`: ping-pong, `o`: apagado) y su velocidad de ejecución en tiempo real sin interrumpir los cálculos térmicos ni la salida PWM.
+*   **`c1-neopixel-led/`**: 
+*   **`c2-pi/`**: 
+*   **`c3-neopixel-strip/`**:
 
 ## Requisitos de Software
 
@@ -39,7 +38,7 @@ Esto generará los archivos `.uf2` ejecutables dentro de las subcarpetas corresp
 ### 2. Carga del binario a la DualMCU (RP2040)
 1. Conecta la placa UNIT DualMCU a la computadora vía USB mientras mantienes presionado el botón **BOOT** correspondiente al RP2040.
 2. El sistema montará un dispositivo de almacenamiento masivo.
-3. Arrastra y suelta el archivo `.uf2` del experimento deseado (por ejemplo, `c4_marquee.uf2`) dentro de la unidad de la placa.
+3. Arrastra y suelta el archivo `.uf2` del experimento deseado (por ejemplo, `c1-neopixel-led.uf2`) dentro de la unidad de la placa.
 4. La placa se reiniciará automáticamente y comenzará a ejecutar el kernel de FreeRTOS.
 
 ### 3. Ejecución de la Interfaz Serial
