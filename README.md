@@ -4,7 +4,7 @@
 
 **Asignatura:** Procesadores Multinúcleo
 
-Repositorio creado para la Práctica 7 de Procesadores Multinúcleo, el cual contiene la implementación de un sistema operativo en tiempo real (RTOS) utilizando FreeRTOS sobre la arquitectura de un microcontrolador RP2040. El objetivo principal es realizar cómputo concurrente y paralelo en el RP2040 mediante la gestión de múltiples tareas, protegiendo los recursos compartidos mediante el uso de *Mutex*.
+Repositorio creado para la Práctica 7 de Procesadores Multinúcleo, el cual contiene la implementación de un sistema operativo en tiempo real (RTOS) utilizando FreeRTOS sobre la arquitectura de un microcontrolador RP2040. El objetivo principal es realizar cómputo concurrente y paralelo en el RP2040 mediante la gestión de múltiples tareas, protegiendo los recursos compartidos mediante el uso de *Mutex* y *Semáforos binarios*.
 
 ## Estructura del Proyecto
 
