@@ -43,7 +43,7 @@ static double sequential_pi (uint32_t n);
 
 // Funciones para aproximar el valor de pi utilizando n términos de forma paralela.
 static void parallel_pi (void* job);
-static void core1_worker (void);
+static void core1_main (void);
 
 // Lee un valor de tipo uint32_t de stdin y lo muestra en stdout.
 // Cuando esta función regresa, contiene el valor leído.
@@ -66,7 +66,7 @@ void main( void ){
 			     2,                         // Prioridad asignada a la tarea.
 			     NULL );                    // Identificador de la tarea.
 
-	multicore_launch_core1(core1_worker);
+	multicore_launch_core1(core1_main);
 	vTaskStartScheduler();
 	for( ;; );
 }
@@ -190,14 +190,14 @@ static void parallel_pi(void *param){
 	sem_release(&semc);
 	
 	// Solo las tareas del Core 0 (FreeRTOS) se quedan esperando a vTaskDelete.
-	// El Core 1 termina la función normalmente para regresar al while(true) de core1_worker.
+	// El Core 1 termina la función normalmente para regresar al while(true) de core1_main.
 	if (get_core_num() == 0) {
 		vTaskSuspend(NULL);
 	}
 }
 
 // Función principal permanente del Core 1 (Bare-metal).
-static void core1_worker(void){
+static void core1_main(void){
 	while(true){
 		work_t* job = (work_t*) multicore_fifo_pop_blocking();
 		parallel_pi(job);
