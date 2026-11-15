@@ -19,4 +19,4 @@ add_subdirectory(neopixel)
 # Experiments
 add_subdirectory(c1-neopixel-led)
 add_subdirectory(c2-pi)
-#add_subdirectory(c3-neopixel-strip)
+add_subdirectory(c3-neopixel-strip)

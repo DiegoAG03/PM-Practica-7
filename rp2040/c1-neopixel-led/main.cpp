@@ -19,7 +19,7 @@
 
 // Asignación de pines de la DualMCU
 #define NEOPIX_PWR 17  // Power del LED Neopixel (ON/OFF)
-#define NEOPIX_DIN 16  // Datos del LED NEopixel
+#define NEOPIX_DIN 16  // Datos del LED Neopixel
 #define ADC0_PIN   26  // Pin del potenciómetro
 
 // Variables de saturación y brillo compartidas por las tareas
