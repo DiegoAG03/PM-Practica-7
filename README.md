@@ -10,9 +10,9 @@ Repositorio creado para la Práctica 7 de Procesadores Multinúcleo, el cual con
 
 El repositorio está dividido en cuatro experimentos incrementales:
 
-*   **`c1-neopixel-led/`**: 
-*   **`c2-pi/`**: 
-*   **`c3-neopixel-strip/`**:
+*   **`c1-neopixel-led/`**: Programa dedicado a la configuración y control de parámetros del LED NEOPIXEL integrado en la tarjeta RP2040, tales como el tono y la intensidad de brillo. 
+*   **`c2-pi/`**: Implementación de algoritmos para aproximar el valor de pi de manera secuencial y paralela distribuyendo las tareas entre los 2 núcleos del microcontrolador.
+*   **`c3-neopixel-strip/`**: Programa dedicado a la configuración de una tira LED NEOPIXEL WS2812B, así como la implementación de un efecto de ping-pong y el control de tono y velocidad de ejecución. 
 
 ## Requisitos de Software
 
