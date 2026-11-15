@@ -18,8 +18,8 @@ add_executable(c2-pi main.c aux.c)
 # Incluir el directorio actual para que el compilador detecte FreeRTOSConfig.h
 target_include_directories(c2-pi PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 
-# Ligar librerías base, el kernel de FreeRTOS y el gestor de memoria (Heap 4)
-target_link_libraries(c2-pi pico_stdlib FreeRTOS-Kernel FreeRTOS-Kernel-Heap4)
+# Ligar librerías base, el multinucleo, la sincronización, el kernel de FreeRTOS y el gestor de memoria (Heap 4)
+target_link_libraries(c2-pi pico_stdlib pico_multicore pico_sync FreeRTOS-Kernel FreeRTOS-Kernel-Heap4)
 
 # Habilitar salida estándar por USB
 pico_enable_stdio_usb(c2-pi 1)
