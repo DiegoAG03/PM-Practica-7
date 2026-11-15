@@ -8,7 +8,7 @@ Repositorio creado para la Práctica 7 de Procesadores Multinúcleo, el cual con
 
 ## Estructura del Proyecto
 
-El repositorio está dividido en cuatro experimentos incrementales:
+El repositorio contiene tres experimentos:
 
 *   **`c1-neopixel-led/`**: Programa dedicado a la configuración y control de parámetros del LED NEOPIXEL integrado en la tarjeta RP2040, tales como el tono y la intensidad de brillo. 
 *   **`c2-pi/`**: Implementación de algoritmos para aproximar el valor de pi de manera secuencial y paralela distribuyendo las tareas entre los 2 núcleos del microcontrolador.
